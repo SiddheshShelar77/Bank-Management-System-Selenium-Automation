@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BankAutomation">
+    <test name="BankTests">
+        <classes>
+            <class name="tests.LoginTests"/>
+            <class name="tests.AccountCreationTests"/>
+            <class name="tests.DepositTests"/>
+            <class name="tests.WithdrawalTests"/>
+            <class name="tests.BalanceTests"/>
+            <class name="tests.FundTransferTests"/>
+            <class name="tests.LogoutTests"/>
+        </classes>
+    </test>
+</suite>

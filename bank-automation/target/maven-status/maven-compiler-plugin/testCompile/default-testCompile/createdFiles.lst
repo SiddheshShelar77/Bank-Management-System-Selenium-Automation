@@ -1,0 +1,8 @@
+base\BaseTest.class
+tests\DepositTests.class
+tests\WithdrawalTests.class
+tests\FundTransferTests.class
+tests\LoginTests.class
+tests\AccountCreationTests.class
+tests\LogoutTests.class
+tests\BalanceTests.class

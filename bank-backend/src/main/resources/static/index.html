@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Bank Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Bank Management System</h1>
+        <p>STQA Demonstration Application</p>
+      </header>
+      <section id="loginPanel" class="panel">
+        <h2>Login</h2>
+        <input id="username" placeholder="Username" /><input
+          id="password"
+          type="password"
+          placeholder="Password"
+        /><button id="loginBtn" onclick="login()">Login</button>
+        <p id="loginMessage" class="msg"></p>
+        <p>New user? Create an account first.</p>
+        <button class="secondary" onclick="showRegister()">
+          Create account
+        </button>
+      </section>
+      <section id="appPanel" class="panel hidden">
+        <div class="row">
+          <h2 id="welcome"></h2>
+          <button class="secondary" id="logoutBtn" onclick="logout()">
+            Logout
+          </button>
+        </div>
+        <div class="grid">
+          <button onclick="show('deposit')">Deposit</button
+          ><button onclick="show('withdraw')">Withdraw</button
+          ><button onclick="show('balance')">Balance enquiry</button
+          ><button onclick="show('transfer')">Fund transfer</button
+          ><button onclick="show('history')">Transaction history</button>
+        </div>
+        <div id="work"></div>
+        <p id="appMessage" class="msg"></p>
+      </section>
+      <section id="registerPanel" class="panel hidden">
+        <h2>Create account</h2>
+        <input id="rname" placeholder="Customer name" /><input
+          id="remail"
+          placeholder="Email"
+        /><input id="rmobile" placeholder="Mobile" /><input
+          id="ruser"
+          placeholder="Username"
+        /><input id="rpass" type="password" placeholder="Password" /><button
+          id="registerBtn"
+          onclick="register()"
+        >
+          Create account</button
+        ><button class="secondary" onclick="backLogin()">Back to login</button>
+        <p id="registerMessage" class="msg"></p>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

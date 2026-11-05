@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>TestNG:  BankTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BankTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 05 10:24:36 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>67 seconds (67073 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DepositTests.negativeDeposit()'><b>negativeDeposit</b><br>Test class: tests.DepositTests</td>
+<td></td>
+<td>0</td>
+<td>tests.DepositTests@71b1176b</td></tr>
+<tr>
+<td title='tests.LogoutTests.loginAgainAfterLogout()'><b>loginAgainAfterLogout</b><br>Test class: tests.LogoutTests</td>
+<td></td>
+<td>1</td>
+<td>tests.LogoutTests@78aab498</td></tr>
+<tr>
+<td title='tests.WithdrawalTests.zeroWithdrawal()'><b>zeroWithdrawal</b><br>Test class: tests.WithdrawalTests</td>
+<td></td>
+<td>1</td>
+<td>tests.WithdrawalTests@6193932a</td></tr>
+<tr>
+<td title='tests.FundTransferTests.insufficientBalanceTransfer()'><b>insufficientBalanceTransfer</b><br>Test class: tests.FundTransferTests</td>
+<td></td>
+<td>1</td>
+<td>tests.FundTransferTests@159f197</td></tr>
+<tr>
+<td title='tests.WithdrawalTests.validWithdrawal()'><b>validWithdrawal</b><br>Test class: tests.WithdrawalTests</td>
+<td></td>
+<td>1</td>
+<td>tests.WithdrawalTests@6193932a</td></tr>
+<tr>
+<td title='tests.LogoutTests.dashboardHiddenAfterLogout()'><b>dashboardHiddenAfterLogout</b><br>Test class: tests.LogoutTests</td>
+<td></td>
+<td>1</td>
+<td>tests.LogoutTests@78aab498</td></tr>
+<tr>
+<td title='tests.DepositTests.zeroDeposit()'><b>zeroDeposit</b><br>Test class: tests.DepositTests</td>
+<td></td>
+<td>1</td>
+<td>tests.DepositTests@71b1176b</td></tr>
+<tr>
+<td title='tests.FundTransferTests.negativeTransfer()'><b>negativeTransfer</b><br>Test class: tests.FundTransferTests</td>
+<td></td>
+<td>1</td>
+<td>tests.FundTransferTests@159f197</td></tr>
+<tr>
+<td title='tests.LoginTests.validLogin()'><b>validLogin</b><br>Test class: tests.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTests@3c72f59f</td></tr>
+<tr>
+<td title='tests.WithdrawalTests.blankWithdrawal()'><b>blankWithdrawal</b><br>Test class: tests.WithdrawalTests</td>
+<td></td>
+<td>1</td>
+<td>tests.WithdrawalTests@6193932a</td></tr>
+<tr>
+<td title='tests.AccountCreationTests.emptyRegistration()'><b>emptyRegistration</b><br>Test class: tests.AccountCreationTests</td>
+<td></td>
+<td>0</td>
+<td>tests.AccountCreationTests@5276e6b0</td></tr>
+<tr>
+<td title='tests.WithdrawalTests.insufficientBalanceWithdrawal()'><b>insufficientBalanceWithdrawal</b><br>Test class: tests.WithdrawalTests</td>
+<td></td>
+<td>0</td>
+<td>tests.WithdrawalTests@6193932a</td></tr>
+<tr>
+<td title='tests.BalanceTests.balanceEnquiryAfterWithdrawal()'><b>balanceEnquiryAfterWithdrawal</b><br>Test class: tests.BalanceTests</td>
+<td></td>
+<td>1</td>
+<td>tests.BalanceTests@647fd8ce</td></tr>
+<tr>
+<td title='tests.FundTransferTests.validTransfer()'><b>validTransfer</b><br>Test class: tests.FundTransferTests</td>
+<td></td>
+<td>1</td>
+<td>tests.FundTransferTests@159f197</td></tr>
+<tr>
+<td title='tests.LogoutTests.successfulLogout()'><b>successfulLogout</b><br>Test class: tests.LogoutTests</td>
+<td></td>
+<td>0</td>
+<td>tests.LogoutTests@78aab498</td></tr>
+<tr>
+<td title='tests.FundTransferTests.invalidReceiverTransfer()'><b>invalidReceiverTransfer</b><br>Test class: tests.FundTransferTests</td>
+<td></td>
+<td>1</td>
+<td>tests.FundTransferTests@159f197</td></tr>
+<tr>
+<td title='tests.AccountCreationTests.validAccountCreation()'><b>validAccountCreation</b><br>Test class: tests.AccountCreationTests</td>
+<td></td>
+<td>1</td>
+<td>tests.AccountCreationTests@5276e6b0</td></tr>
+<tr>
+<td title='tests.LoginTests.invalidPassword()'><b>invalidPassword</b><br>Test class: tests.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTests@3c72f59f</td></tr>
+<tr>
+<td title='tests.FundTransferTests.zeroTransfer()'><b>zeroTransfer</b><br>Test class: tests.FundTransferTests</td>
+<td></td>
+<td>1</td>
+<td>tests.FundTransferTests@159f197</td></tr>
+<tr>
+<td title='tests.DepositTests.validDeposit()'><b>validDeposit</b><br>Test class: tests.DepositTests</td>
+<td></td>
+<td>1</td>
+<td>tests.DepositTests@71b1176b</td></tr>
+<tr>
+<td title='tests.BalanceTests.balanceEnquiryAfterDeposit()'><b>balanceEnquiryAfterDeposit</b><br>Test class: tests.BalanceTests</td>
+<td></td>
+<td>1</td>
+<td>tests.BalanceTests@647fd8ce</td></tr>
+<tr>
+<td title='tests.DepositTests.blankDeposit()'><b>blankDeposit</b><br>Test class: tests.DepositTests</td>
+<td></td>
+<td>1</td>
+<td>tests.DepositTests@71b1176b</td></tr>
+<tr>
+<td title='tests.WithdrawalTests.negativeWithdrawal()'><b>negativeWithdrawal</b><br>Test class: tests.WithdrawalTests</td>
+<td></td>
+<td>1</td>
+<td>tests.WithdrawalTests@6193932a</td></tr>
+<tr>
+<td title='tests.BalanceTests.validBalanceEnquiry()'><b>validBalanceEnquiry</b><br>Test class: tests.BalanceTests</td>
+<td></td>
+<td>1</td>
+<td>tests.BalanceTests@647fd8ce</td></tr>
+</table><p>
+</body>
+</html>
